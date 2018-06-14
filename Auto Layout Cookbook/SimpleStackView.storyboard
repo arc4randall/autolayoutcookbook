@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fsh-5l-ENR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bWu-PF-5nQ">
+            <objects>
+                <viewController id="fsh-5l-ENR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovH-wE-KZ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="91u-pq-Uk2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eZF-yh-soA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="602-zA-mia">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbI-bQ-VdZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="flowers" translatesAutoresizingMaskIntoConstraints="NO" id="W58-cM-RXx">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="564.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A81-pl-gTn">
+                                        <rect key="frame" x="0.0" y="601" width="343" height="30"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="91u-pq-Uk2" firstAttribute="top" secondItem="602-zA-mia" secondAttribute="bottom" constant="8" symbolic="YES" id="EgP-KU-RU3"/>
+                            <constraint firstItem="602-zA-mia" firstAttribute="leading" secondItem="eZF-yh-soA" secondAttribute="leadingMargin" id="IGR-ma-Nae"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="602-zA-mia" secondAttribute="trailing" id="KqP-gU-EiH"/>
+                            <constraint firstItem="602-zA-mia" firstAttribute="top" secondItem="ovH-wE-KZ5" secondAttribute="bottom" constant="8" symbolic="YES" id="efo-pm-TXN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvx-Z0-uuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="371"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flowers" width="300" height="400"/>
+    </resources>
+</document>
