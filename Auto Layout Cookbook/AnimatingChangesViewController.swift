@@ -88,10 +88,10 @@ class AnimatingChangesViewController: UIViewController {
             */
             self.spaceBetweenViewsConstraints.constant = 20.0
             
-            self.topConstraint = entering.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor, constant: 20.0)
+            self.topConstraint = entering.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20.0)
             self.topConstraint.isActive = true
             
-            self.bottomConstraint = self.bottomLayoutGuide.topAnchor.constraint(equalTo: self.topView.bottomAnchor, constant: 20.0)
+            self.bottomConstraint = self.view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: self.topView.bottomAnchor, constant: 20.0)
             self.bottomConstraint.isActive = true
             
             self.view.layoutIfNeeded()
