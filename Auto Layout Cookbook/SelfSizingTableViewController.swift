@@ -33,14 +33,14 @@ class SelfSizingTableViewController: UITableViewController {
         
         // Enable self sizing rows.
         tableView.estimatedRowHeight = 80.0
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         
         // Set up font change observer
         let application = UIApplication.shared
         let notificationCenter = NotificationCenter.default
         let queue = OperationQueue.main
         
-        fontChangeObserver = notificationCenter.addObserver(forName: NSNotification.Name.UIContentSizeCategoryDidChange, object: application, queue: queue) { [unowned self] _ in
+        fontChangeObserver = notificationCenter.addObserver(forName: UIContentSizeCategory.didChangeNotification, object: application, queue: queue) { [unowned self] _ in
             self.tableView.invalidateIntrinsicContentSize()
         }
     }

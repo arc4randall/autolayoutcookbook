@@ -69,11 +69,11 @@ class DynamicStackViewController: UIViewController {
         
         let dateLabel = UILabel()
         dateLabel.text = date
-        dateLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+        dateLabel.font = .preferredFont(forTextStyle: .body)
         
         let numberLabel = UILabel()
         numberLabel.text = number
-        numberLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        numberLabel.font = .preferredFont(forTextStyle: .headline)
         numberLabel.setContentHuggingPriority(UILayoutPriority.defaultLow - 1.0, for: .horizontal)
         numberLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultHigh - 1.0, for: .horizontal)
         
